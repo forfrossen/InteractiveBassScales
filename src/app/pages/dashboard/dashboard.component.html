@@ -1,0 +1,15 @@
+<nb-card class="w-100 h-100">
+	<nb-card-body class="flex-grow-1">
+
+		<div class="container flex-row-reverse">			
+			<div class="row w-100 justify-content-around" *ngFor="let string of strings">
+			
+				<div clas="col" *ngFor="let fret of string.frets">
+					{{fret.name}}
+				</div>
+			
+			</div>
+		</div>
+
+	</nb-card-body>
+</nb-card>
