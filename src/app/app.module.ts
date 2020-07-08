@@ -20,6 +20,7 @@ import {
   NbToastrModule,
   NbWindowModule,
 } from '@nebular/theme';
+import { TrimPipe } from './@core/utils/trim.pipe';
 
 @NgModule({
   declarations: [AppComponent],

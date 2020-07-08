@@ -2,10 +2,19 @@
 	<nb-card-body class="flex-grow-1">
 
 		<div class="container flex-row-reverse">			
-			<div class="row w-100 justify-content-around" *ngFor="let string of strings">
 			
-				<div clas="col" *ngFor="let fret of string.frets">
-					{{fret.name}}
+			<div class="row w-100" *ngFor="let string of strings; let i = index">
+				<div class="string w-100">
+					<div class="string-image" [ngClass]="'string-' +  (i + 1) "></div>
+					<div class="frets w-100 justify-content-around d-flex flex-row">
+						<div class="col fret" *ngFor="let fret of string.frets; let j = index" [ngClass]="{'framed-fret': framedFrets.includes(j)}">
+							<div class="fret-label d-flex" [ngClass]="'note-' + fret.letter.trim() + fret.acc.trim()" >
+								<div class="w-100">
+									{{ fret.name.trim() }}
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			
 			</div>

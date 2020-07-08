@@ -1,3 +1,98 @@
 :host{
     height: 100%;
 }
+.string{
+    margin-bottom: -1px;
+}
+
+.fret{
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    padding: 1rem;
+    width: 2.5rem;
+    margin-right: -1px;
+}
+
+.fret-label{
+    background: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    align-items: center
+}
+
+.framed-fret {
+    border-left-style: double;
+    border-right-style: double;
+    border-left-width: 2px;
+    border-right-width: 2px;
+}
+
+.string-image {
+    width: 100%;    
+    background-image: 
+        linear-gradient(
+        0deg,black 0%, rgba(100, 100, 100, 0.2) 10% , 
+        white 50% , rgba(100, 100, 100, 0.2) 90% , gray 100% ),
+        repeating-linear-gradient(to right, black 0px, white 3px) 
+    ;
+    position: relative;
+    top: 50%;
+}
+
+.string-1{
+    height: 6px;
+    margin-top: -6px;
+}
+
+.string-2{
+    height: 5px;
+    margin-top: -5px;
+}
+
+.string-3{
+    height: 4px;
+    margin-top: -4px;
+}
+
+.string-4{
+    height: 3px;
+    margin-top: -3px;
+}
+
+.string-5{
+    height: 2px;
+    margin-top: -2px;
+}
+
+
+
+.note-A{
+    background-color: orange;
+}
+
+.note-B{
+    background-color: limegreen;
+}
+
+.note-C{
+    background-color: green;
+}
+
+.note-D{
+    background-color: blue;
+}
+
+.note-E{
+    background-color: violet;
+}
+
+.note-F{
+    background-color: purple;
+}
+
+.note-G{
+    background-color: red;
+}

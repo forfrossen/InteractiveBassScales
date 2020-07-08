@@ -13,6 +13,8 @@ export class DashboardComponent implements OnInit {
 	iFrets					:			number;
 	strings					:			any = [{}];
 
+	framedFrets				:			number[] = [2,4,6,8,11,14];
+
 
 	ngOnInit(){
 		this.iStrings	=	4;
@@ -22,11 +24,12 @@ export class DashboardComponent implements OnInit {
 			this.strings[j] = {};
 		}
 
-		this.strings[0].openString = Note.get('B2');
-		this.strings[1].openString = Note.get('E2');
+		this.strings[0].openString = Note.get('G2');
+		this.strings[1].openString = Note.get('D2');
 		this.strings[2].openString = Note.get('A2');
-		this.strings[3].openString = Note.get('D2');
-		this.strings[4].openString = Note.get('G2');
+		this.strings[3].openString = Note.get('E2');
+		this.strings[4].openString = Note.get('B2');
+
 
 		for ( let j = 0; j <= this.iStrings; j++ ){
 
